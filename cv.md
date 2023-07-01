@@ -30,3 +30,14 @@ Hello! I'm Mark, currently residing in the beautiful city of Brest. I am a stude
 
 - Russian: Fluent
 - English: Intermediate level
+
+# Code Example
+Here's my solution to the following [kata](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/javascript) from codewars:
+```javascript
+function scramble(str1, str2) {
+  const str1Counts = [...str1].reduce((counts, char) => (counts[char] = (counts[char] || 0) + 1, counts), {});
+  const str2Counts = [...str2].reduce((counts, char) => (counts[char] = (counts[char] || 0) + 1, counts), {});
+
+  return Object.keys(str2Counts).every((char) => str1Counts[char] >= str2Counts[char]);
+}
+```
