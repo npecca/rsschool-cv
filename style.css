@@ -1,0 +1,15 @@
+/* This is a comment in CSS. It will not affect the code. */
+
+body {
+    background-color: powderblue; /* sets the background color of the entire document */
+  }
+  
+  h1 {
+    color: blue; /* sets the color of h1 elements to blue */
+  }
+  
+  p {
+    color: red; /* sets the color of paragraph text to red */
+    font-size: 18px; /* sets the font size of paragraph text to 18 pixels */
+  }
+  
