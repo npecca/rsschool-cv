@@ -1,15 +1,165 @@
-/* This is a comment in CSS. It will not affect the code. */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+}
 
+
+
+html {
+    scroll-behavior: smooth; 
+  }
 body {
-    background-color: powderblue; /* sets the background color of the entire document */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #0f2224;
+    margin: 0;
+    min-height: 100vh;
+  }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+pre{
+  padding: 0;
+  margin: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.nav-link{
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+  }
+.nav-link::after{
+    content: "";
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 #ffffff;
+    height: 2px;
+    width: 0;
+    position: relative;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.nav-link:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.section {
+  width: calc(50% - 10px);
+  padding: 10px;  
+}
+
+.section-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.section-wide{
+    width: 100%;
+    
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6fa3a3;
+  }
+.section-wide-title{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid;
+  }
+.main-title {
+  font-weight: 300;
+  font-size: 32px;
+}
+.section-avatar{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.section-item {
+    position: relative;
+    padding-left: 30px;
+  }
+.section-item a{
+    text-decoration: none;
+    color:#6fa3a3
   }
   
-  h1 {
-    color: blue; /* sets the color of h1 elements to blue */
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #6fa3a3;
+    border-radius: 50%;
   }
-  
-  p {
-    color: red; /* sets the color of paragraph text to red */
-    font-size: 18px; /* sets the font size of paragraph text to 18 pixels */
+.section-list {
+    list-style: none;
+}
+
+.header {
+    background-color: #6fa3a3;
+}
+.footer {
+  background-color: #6fa3a3;
+  padding: 20px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
   }
-  
+}
+@media (max-width: 768px) {
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
