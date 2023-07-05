@@ -39,6 +39,7 @@ p {
 pre{
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
 }
 .container {
     max-width: 1440px;
