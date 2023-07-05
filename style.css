@@ -159,6 +159,9 @@ pre{
   display: flex;
   justify-content: space-between;
 }
+.footer-container div{
+  color: #ffffff;
+}
 @media (max-width: 768px) {
   .section {
     width: 100%;
