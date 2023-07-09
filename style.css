@@ -1,6 +1,8 @@
-* {
-  box-sizing: border-box;
+:root{
+  --main-color: #6fa3a3;
 }
+
+
 @font-face {
     font-family: 'Roboto';
     src: url("assets/fonts/Roboto-Light.ttf");
@@ -13,7 +15,9 @@
 }
 
 
-
+* {
+  box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth; 
   }
@@ -42,7 +46,7 @@ pre{
   overflow-x: auto;
 }
 .container {
-    max-width: 1440px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -104,7 +108,7 @@ pre{
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #6fa3a3;
+    color: var(--main-color);
   }
 .section-wide-title{
     font-weight: 700;
@@ -119,10 +123,14 @@ pre{
   font-size: 32px;
 }
 .section-avatar{
-    border: 2px solid black;
+    border: 2px solid var(--main-color);
     width: 200px;
     height: 200px;
     object-fit: cover;
+    transition: 0.3s;
+}
+.section-avatar:hover {
+  filter: sepia(0.2);
 }
 .section-item {
     position: relative;
@@ -130,7 +138,7 @@ pre{
   }
 .section-item a{
     text-decoration: none;
-    color:#6fa3a3
+    color:var(--main-color)
   }
   
 .section-item::before {
@@ -140,7 +148,7 @@ pre{
     left: 0px;
     width: 10px;
     height: 10px; 
-    border: 1px solid #6fa3a3;
+    border: 1px solid var(--main-color);
     border-radius: 50%;
   }
 .section-list {
@@ -148,10 +156,10 @@ pre{
 }
 
 .header {
-    background-color: #6fa3a3;
+    background-color: var(--main-color);
 }
 .footer {
-  background-color: #6fa3a3;
+  background-color: var(--main-color);
   padding: 20px;
   flex-shrink: 0;
 }
