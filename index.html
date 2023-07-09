@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/cu4GlwGsxI8.ico">
+  <title>CV</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About Myself</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">My Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container main-container">
+      <section class="section section-profile">
+        <img src="assets/img/avatar.jpg" class="section-avatar" alt="avatar">
+        <h1 class="section-title main-title">Mark Karunos</h1>
+      </section>
+      <section class="section section-wide" id="about">
+        <h2 class="section-title section-wide-title">About Myself</h2>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item">Email: <a href="mailto:mark.karynos@gmail.com">mark.karynos@gmail.com</a></li>
+          <li class="section-item">LinkedIn: <a href="https://www.linkedin.com/in/mark-karunas-0514381b8/">Mark
+              Karunas</a></li>
+          <li class="section-item">Telegram: <a href="https://t.me/npecca2k">@npecca2k</a></li>
+          <li class="section-item">Discord: npecca</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Bio</h2>
+        <p>Hello! I'm Mark, currently residing in the beautiful city of Brest. I am a student at the BSU Physics
+          Faculty, always curious and eager to learn new things. My interests have led me to explore the field of
+          programming, a discipline where I can constantly learn and solve problems. I am quick to pick up new skills
+          and am ready to dive into any challenge.</p>
+      </section>
+      <section class="section section-wide">
+        <h2 class="section-title section-wide-title" id="skills">My Skills</h2>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Programming Languages</h2>
+        <ul class="section-list">
+          <li class="section-item">Familiar with JavaScript</li>
+          <li class="section-item">Some knowledge in C</li>
+          <li class="section-item">Basic knowledge of HTML/CSS</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Tools and Concepts</h2>
+        <ul class="section-list">
+          <li class="section-item">Understanding of basic data structures and algorithms</li>
+          <li class="section-item">Familiarity with Git and GitHub for version control</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Soft Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">Problem-solving skills</li>
+          <li class="section-item">Attention to detail</li>
+          <li class="section-item">Ability to learn quickly</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2 class="section-title">Languages I Speak</h2>
+        <ul class="section-list">
+          <li class="section-item">Russian: Fluent</li>
+          <li class="section-item">English: Intermediate level</li>
+        </ul>
+      </section>
+      <section class="section section-wide" id="code">
+        <h2 class="section-title section-wide-title">Code Example</h2>
+        <p>Here's my solution to the following <a
+            href="https://www.codewars.com/kata/55c04b4cc56a697bb0000048/javascript">kata</a> from codewars:</p>
+        <pre>
+                    <code>
+function scramble(str1, str2) {
+    const str1Counts = [...str1].reduce(
+        (counts, char) => (counts[char] = (counts[char] || 0) + 1, counts), {});
+    const str2Counts = [...str2].reduce(
+        (counts, char) => (counts[char] = (counts[char] || 0) + 1, counts), {});
+    return Object.keys(str2Counts).every(
+        (char) => str1Counts[char] >= str2Counts[char]);
+}
+                    </code>
+                </pre>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        © 2023
+        <a href="https://github.com/npecca" class="nav-link">npecca</a>
+      </div>
+      <a href="https://rs.school/js/" class="rss"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
